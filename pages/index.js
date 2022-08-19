@@ -1,31 +1,14 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Banner, Navbar, SectionCard } from "../components";
+import { getPopularVideos, getVideos } from "../lib/videos";
 
-export default function Home() {
-  const actionVideos = [
-    {
-      id: 0,
-      imgUrl: "/static/mrrobot.jpg",
-    },
-    {
-      id: 2,
-      imgUrl: "/static/theboys.webp",
-    },
-    {
-      id: 3,
-      imgUrl: "/static/suits.jpg",
-    },
-    {
-      id: 4,
-      imgUrl: "/static/got.jpg",
-    },
-    {
-      id: 4,
-      imgUrl: "/static/bb.jpg",
-    },
-  ];
-
+export default function Home({
+  actionVideos,
+  programmingVideos,
+  spaceVideos,
+  popularVideos,
+}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -33,20 +16,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar username="pblgllgs@gmail.com" />
-      <Banner
-        title={"Mr robot"}
-        subTitle={"Have society?"}
-        imgUrl="/static/mrrobot.jpg"
-      />
-      <div className={styles.sectionWrapper}>
-        <SectionCard title="Action" videos={actionVideos} size={"large"} />
-        <SectionCard
-          title="Programming"
-          videos={actionVideos}
-          size={"medium"}
+      <div className={styles.main}>
+        <Banner
+          title={"Mr robot"}
+          subTitle={"Have society?"}
+          imgUrl="/static/mrrobot.jpg"
         />
-        <SectionCard title="Programming" videos={actionVideos} size={"small"} />
+        <div className={styles.sectionWrapper}>
+          <SectionCard title="Action" videos={actionVideos} size={"large"} />
+          <SectionCard title="Space" videos={spaceVideos} size={"medium"} />
+          <SectionCard
+            title="Programming"
+            videos={programmingVideos}
+            size={"small"}
+          />
+          <SectionCard title="Popular" videos={popularVideos} size={"medium"} />
+        </div>
       </div>
     </div>
   );
 }
+
+export const getServerSideProps = async () => {
+  const actionVideos = await getVideos("razer");
+  const programmingVideos = await getVideos("programming");
+  const spaceVideos = await getVideos("space");
+  const popularVideos = await getPopularVideos();
+  return {
+    props: {
+      actionVideos,
+      programmingVideos,
+      spaceVideos,
+      popularVideos,
+    },
+  };
+};
