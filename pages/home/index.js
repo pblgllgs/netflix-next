@@ -1,27 +1,43 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { Banner } from "../components";
+import styles from "../../styles/Home.module.css";
+import { BannerHome, Navbar, SectionCard } from "../../components";
 import {
   getCommonVideosLocal,
   getPopularVideos,
   getVideos,
-} from "../lib/videos";
-import { mostPopular, series, programming, space } from "../data";
-import { env } from "../config/config";
+} from "../../lib/videos";
+import { mostPopular, series, programming, space } from "../../data";
+import { env } from "../../config/config";
 
-export default function Home() {
+export default function Home({
+  actionVideos,
+  programmingVideos,
+  spaceVideos,
+  popularVideos,
+}) {
   return (
     <div className={styles.container}>
       <Head>
         <title>Netflix</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar username="pblgllgs@gmail.com" />
       <div className={styles.main}>
-        <Banner
+        <BannerHome
           title={"Mr robot"}
           subTitle={"Have society?"}
           imgUrl="/static/mrrobot.jpg"
         />
+        <div className={styles.sectionWrapper}>
+          <SectionCard title="Action" videos={actionVideos} size={"large"} />
+          <SectionCard title="Space" videos={spaceVideos} size={"medium"} />
+          <SectionCard
+            title="Programming"
+            videos={programmingVideos}
+            size={"small"}
+          />
+          <SectionCard title="Popular" videos={popularVideos} size={"medium"} />
+        </div>
       </div>
     </div>
   );
