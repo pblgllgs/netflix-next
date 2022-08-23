@@ -51,10 +51,8 @@ const Navbar = () => {
   const logout = async () => {
     try {
       const isLoggedIn = await magic.user.isLoggedIn();
-      console.log({ isLoggedIn });
       if (isLoggedIn) {
         const isLogout = await magic.user.logout();
-        console.log({ isLogout });
         if (isLogout) {
           Cookies.set("didToken", "");
           router.push("/login");

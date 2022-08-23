@@ -70,7 +70,15 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <button className={styles.btnInputIndex}>Comenzar</button>
+                  <button className={styles.btnInputIndex}>
+                    <div className={styles.titleBtn}>Comenzar</div>
+                    <Image
+                      src="/static/chevron_right.svg"
+                      alt="fecha"
+                      width={"32px"}
+                      height={"32px"}
+                    />
+                  </button>
                 </div>
               </div>
             </div>

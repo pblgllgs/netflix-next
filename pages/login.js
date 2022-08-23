@@ -39,7 +39,6 @@ const Login = () => {
           const didToken = await magic.auth.loginWithMagicLink({
             email,
           });
-          console.log({ didToken });
           if (didToken) {
             Cookies.set("didToken", didToken);
             router.push("/home");

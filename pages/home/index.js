@@ -24,6 +24,7 @@ export default function Home({
       <Navbar username="pblgllgs@gmail.com" />
       <div className={styles.main}>
         <BannerHome
+          videoId="Oc-AsN7d1wg"
           title={"Mr robot"}
           subTitle={"Have society?"}
           imgUrl="/static/mrrobot.jpg"

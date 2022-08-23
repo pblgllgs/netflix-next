@@ -16,7 +16,7 @@
   min-width: 240px;
 }
 
-.blockRight{
+.blockRight {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -69,7 +69,7 @@
   margin-top: 2rem;
 }
 
-.btnLenguaje{
+.btnLenguaje {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
@@ -78,7 +78,7 @@
   height: 35px;
   width: 75px;
   background-color: black;
-  border: 1px solid white
+  border: 1px solid white;
 }
 
 .btnIniciar {
@@ -128,6 +128,10 @@
 }
 
 .btnInputIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: red;
   width: 180px;
   height: 58px;
@@ -135,4 +139,8 @@
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 2px;
   margin-left: 17px;
+}
+
+.titleBtn {
+  margin-left: 1rem;
 }

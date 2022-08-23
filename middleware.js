@@ -9,7 +9,15 @@ export function middleware(request) {
     }
     return NextResponse.next();
   }
-  return NextResponse.next();
+
+  if (request.nextUrl.pathname.startsWith("/video")) {
+    const didToken = request.cookies.get("didToken");
+    if (didToken === "none") {
+      const loginUrl = new URL("/login", request.url);
+      return NextResponse.redirect(loginUrl);
+    }
+    return NextResponse.next();
+  }
 }
 
 export const config = {

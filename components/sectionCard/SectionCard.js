@@ -10,7 +10,7 @@ const SectionCard = (props) => {
       <div className={styles.cardWrapper}>
         {videos.map((video, idx) => {
           return (
-            <Card key={video.id} id={idx} imgUrl={video.imgUrl} size={size} />
+            <Card key={idx} imgUrl={video.imgUrl} size={size} id={video.id} />
           );
         })}
       </div>
