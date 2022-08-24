@@ -4,7 +4,7 @@ import styles from "./Card.module.css";
 import { motion } from "framer-motion";
 import cls from "classnames";
 import Modal from "react-modal";
-import { getVideoById } from "../../lib/videos";
+import { getYoutubeVideoById } from "../../lib/videos";
 import { useRouter } from "next/router";
 
 Modal.setAppElement("#__next");
@@ -40,13 +40,14 @@ const Card = (props) => {
   };
 
   const getVideo = async () => {
-    const response = await getVideoById(id);
-    setVideo(response);
+    const response = await getYoutubeVideoById(id);
+    console.log({ response });
+    setVideo(response[0]);
   };
 
   const [video, setVideo] = useState("");
 
-  const { title, publishTime, description, channelTitle, tags } = video;
+  const { title, publishTime, description, channelTitle, statistics } = video;
 
   const scale = id === 0 ? { scale: 1.1 } : { scale: 1.1 };
 
@@ -110,23 +111,52 @@ const Card = (props) => {
                     <p className={styles.description}>{description}</p>
                   </div>
                   <div className={styles.col2}>
-                    <p className={cls(styles.subText, styles.subTextWrapper)}>
-                      <span className={styles.textColor}>Cast: </span>
-                      <span className={styles.channelTitle}>
-                        {channelTitle}
-                      </span>
-                    </p>
-                    <p className={cls(styles.subText, styles.subTextWrapper)}>
-                      <span className={styles.textColor}>Tags: </span>
-                      <div>
-                        <ul>
-                          {tags &&
-                            tags.slice(0, 10).map((tag, idx) => {
-                              return <li key={idx}>{tag}</li>;
-                            })}
-                        </ul>
-                      </div>
-                    </p>
+                    {statistics && (
+                      <>
+                        <p
+                          className={cls(styles.subText, styles.subTextWrapper)}
+                        >
+                          <span className={styles.textColor}>Cast: </span>
+                          <span className={styles.channelTitle}>
+                            {channelTitle}
+                          </span>
+                        </p>
+                        <p
+                          className={cls(styles.subText, styles.subTextWrapper)}
+                        >
+                          <span className={styles.textColor}>Vistas: </span>
+                          <span className={styles.channelTitle}>
+                            {statistics.viewCount}
+                          </span>
+                        </p>
+                        <p
+                          className={cls(styles.subText, styles.subTextWrapper)}
+                        >
+                          <span className={styles.textColor}>Likes: </span>
+                          <span className={styles.channelTitle}>
+                            {statistics.likeCount}
+                          </span>
+                        </p>
+                        <p
+                          className={cls(styles.subText, styles.subTextWrapper)}
+                        >
+                          <span className={styles.textColor}>Favoritos: </span>
+                          <span className={styles.channelTitle}>
+                            {statistics.favoriteCount}
+                          </span>
+                        </p>
+                        <p
+                          className={cls(styles.subText, styles.subTextWrapper)}
+                        >
+                          <span className={styles.textColor}>
+                            Comentarios:{" "}
+                          </span>
+                          <span className={styles.channelTitle}>
+                            {statistics.commentCount}
+                          </span>
+                        </p>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
