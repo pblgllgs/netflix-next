@@ -117,14 +117,36 @@ const Login = () => {
             <div className={styles.primeraVez}>¿Primera vez en Netflix?</div>
             <div className={styles.subLink}>&nbsp;Suscríbete ahora</div>
           </div>
+        </div>
+        <div className={styles.bottomWrapper}>
           <div className={styles.ultima}>
             <div className={styles.captcha}>
               Esta página está protegida por Google reCAPTCHA
             </div>
           </div>
           <div className={styles.masInfo}>
-            para comprobar que no eres un robot.
-            <Link href={"/login"}> Más info.</Link>
+            para comprobar que no eres un robot.{" "}
+            <span className={styles.letter}>&nbsp;Más info</span>
+          </div>
+        </div>
+        <div className={styles.footer}>
+          <div className={styles.footerUno}>
+            ¿Preguntas? Llama al 171 800 835 909
+          </div>
+          <div className={styles.footerDos}>
+            <div className={styles.footerItem}>Preguntas frecuentes</div>
+            <div className={styles.footerItem}>Centro de ayuda</div>
+            <div>Términos de uso</div>
+            <div className={styles.footerItem}>Privacidad</div>
+          </div>
+          <div className={styles.footerTres}>
+            <div className={styles.footerItem1}>Preferencias de cookies</div>
+            <div className={styles.footerItem2}>Información corporativa</div>
+            <div className={styles.footerItem}></div>
+            <div className={styles.footerItem}></div>
+          </div>
+          <div className={styles.footerCuatro}>
+            <button>Español</button>
           </div>
         </div>
       </main>

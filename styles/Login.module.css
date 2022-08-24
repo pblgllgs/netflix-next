@@ -17,7 +17,7 @@
 }
 
 .logoWrapper {
-  color: var(--red);
+  color: #e50914;
   width: 15rem /* 128px */;
   margin-left: 1.5rem;
 }
@@ -26,6 +26,10 @@
   width: 100%;
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   display: flex;
   width: 100%;
@@ -35,26 +39,21 @@
   justify-content: center;
 }
 
-.inputs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .mainWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   padding-bottom: 6rem;
-  padding-top: 3rem /* 32px */;
+  padding-top: 1.5rem /* 32px */;
   background-color: var(--black20);
 
-  height: 670px;
+  height: 450px;
   padding-left: 3rem /* 48px */;
   padding-right: 3rem /* 48px */;
-  border-radius: 0.375rem /* 6px */;
-  width: 465px;
+  border-top-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  width: 450px;
 }
 
 .signinHeader {
@@ -62,8 +61,15 @@
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 2rem /* 32px */;
+  margin-top: 8rem;
   margin-left: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .emailInput1 {
@@ -110,48 +116,8 @@
   color: #e86904;
 }
 
-.penultimo {
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.1rem;
-}
-
-.primeraVez {
-  color: grey;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.subLink {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.ultima {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: grey;
-  margin-top: 0.6rem;
-}
-
-.captcha {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
-}
-
-.masInfo {
-  color: grey;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
-  padding-left: 1.2rem;
-}
-
 .loginBtn {
-  background-color: var(--red10);
+  background-color: #e50914;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 3rem /* 48px */;
   padding-right: 3rem /* 48px */;
@@ -198,6 +164,126 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.penultimo {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.bottomWrapper {
+  background-color: var(--netflix);
+  width: 450px;
+  height: 195px;
+  padding-left: 4.5rem;
+  padding-right: 4rem;
+  border-bottom-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+.primeraVez {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subLink {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ultima {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: grey;
+}
+
+.captcha {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+.masInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+.letter {
+  color: #3054f8;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: var(--netflix);
+  width: 100%;
+  height: 260px;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
+.footerUno {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footerDos {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.footerTres {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.footerCuatro {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footerItem {
+  width: 150px;
+  height: 30px;
+}
+
+.footerItem1 {
+  width: 150px;
+  height: 30px;
+  margin-right: 2.8%;
+}
+
+.footerItem2 {
+  width: 150px;
+  height: 30px;
 }
 
 @media (min-width: 768px) {
