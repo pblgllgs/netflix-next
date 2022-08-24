@@ -91,7 +91,7 @@ const Card = (props) => {
               /* Boolean indicating if the modal should be focused after render. */
             }
           >
-            <div onMouseOut={handleClose}>
+            <div>
               <iframe
                 className={styles.videoPlayer}
                 width="100%"
