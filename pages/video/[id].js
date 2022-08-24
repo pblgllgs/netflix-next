@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import styles from "../../styles/Video.module.css";
 import { getVideoById } from "../../lib/videos";
 import { useEffect, useState } from "react";
+import Footer from "../../components/footer/Footer";
 
 const Video = ({ item }) => {
   const router = useRouter();
@@ -71,6 +72,7 @@ const Video = ({ item }) => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -8,10 +8,6 @@
     url(/static/signin-bg.jpg);
 }
 
-.sectionWrapper{
-  margin-top: 5rem;
-}
-
 .mainWrapper {
   display: flex;
   flex-direction: column;

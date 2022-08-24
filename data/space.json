@@ -70,34 +70,6 @@
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "IA1o209566XoZtbZ06aixam6Jwg",
-            "id": {
-                "kind": "youtube#channel",
-                "channelId": "UC8Ca49kHD_-L-32G0PqD2HA"
-            },
-            "snippet": {
-                "publishedAt": "2010-04-16T16:08:44Z",
-                "channelId": "UC8Ca49kHD_-L-32G0PqD2HA",
-                "title": "Canal Space",
-                "description": "Películas,de acción, terror y misterio. Grandes eventos del boxeo y la Lucha libre .",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/zuz3n0Qi7i83LKQnbV-Zs-3zR6g2Wm2X1HMV7w2XtdXnCaInpUWdA9VMz0iAcP9p-IzC9ysjLA=s88-c-k-c0xffffffff-no-rj-mo"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/zuz3n0Qi7i83LKQnbV-Zs-3zR6g2Wm2X1HMV7w2XtdXnCaInpUWdA9VMz0iAcP9p-IzC9ysjLA=s240-c-k-c0xffffffff-no-rj-mo"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/zuz3n0Qi7i83LKQnbV-Zs-3zR6g2Wm2X1HMV7w2XtdXnCaInpUWdA9VMz0iAcP9p-IzC9ysjLA=s800-c-k-c0xffffffff-no-rj-mo"
-                    }
-                },
-                "channelTitle": "Canal Space",
-                "liveBroadcastContent": "upcoming",
-                "publishTime": "2010-04-16T16:08:44Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
             "etag": "cCe9flg6eFZzynsGHP_3JLxCq5s",
             "id": {
                 "kind": "youtube#video",

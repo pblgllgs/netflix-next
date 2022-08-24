@@ -3,12 +3,22 @@ import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
+import Cookies from "cookies-js";
 
 export default function Home() {
   const router = useRouter();
   const handleToLogin = () => {
     router.push("/login");
   };
+
+  useEffect(() => {
+    const token = Cookies.get("didToken");
+    if (router.asPath === "/" && token) {
+      router.push("/home");
+    }
+  }, [router]);
+
   return (
     <div className={styles.container}>
       <Head>

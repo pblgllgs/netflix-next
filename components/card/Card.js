@@ -85,13 +85,13 @@ const Card = (props) => {
               styles.modal,
             )}
             overlayClassName={styles.overlay}
-            preventScroll={true}
+            preventScroll={false}
             shouldFocusAfterRender={
               true
               /* Boolean indicating if the modal should be focused after render. */
             }
           >
-            <div>
+            <div onMouseOut={handleClose}>
               <iframe
                 className={styles.videoPlayer}
                 width="100%"

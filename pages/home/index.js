@@ -1,6 +1,6 @@
 import Head from "next/head";
-import styles from "../../styles/Home.module.css";
-import { BannerHome, Navbar, SectionCard } from "../../components";
+import styles from "../../styles/HomePrivado.module.css";
+import { BannerHome, Footer, Navbar, SectionCard } from "../../components";
 import {
   getCommonVideosLocal,
   getPopularVideos,
@@ -9,7 +9,7 @@ import {
 import { mostPopular, series, programming, space } from "../../data";
 import { env } from "../../config/config";
 
-export default function Home({
+export default function HomePrivado({
   actionVideos,
   programmingVideos,
   spaceVideos,
@@ -22,14 +22,16 @@ export default function Home({
           <title>Netflix</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar username="pblgllgs@gmail.com" />
-        <div className={styles.main}>
+        <div>
+          <Navbar username="pblgllgs@gmail.com" />
           <BannerHome
             videoId="Oc-AsN7d1wg"
             title={"Mr robot"}
             subTitle={"Have society?"}
             imgUrl="/static/mrrobot.jpg"
           />
+        </div>
+        <div className={styles.main}>
           <div className={styles.sectionWrapper}>
             <SectionCard title="Action" videos={actionVideos} size={"large"} />
             <SectionCard title="Space" videos={spaceVideos} size={"medium"} />
@@ -44,6 +46,7 @@ export default function Home({
               size={"medium"}
             />
           </div>
+          <Footer />
         </div>
       </div>
     </>
