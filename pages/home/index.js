@@ -16,31 +16,37 @@ export default function Home({
   popularVideos,
 }) {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Netflix</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Navbar username="pblgllgs@gmail.com" />
-      <div className={styles.main}>
-        <BannerHome
-          videoId="Oc-AsN7d1wg"
-          title={"Mr robot"}
-          subTitle={"Have society?"}
-          imgUrl="/static/mrrobot.jpg"
-        />
-        <div className={styles.sectionWrapper}>
-          <SectionCard title="Action" videos={actionVideos} size={"large"} />
-          <SectionCard title="Space" videos={spaceVideos} size={"medium"} />
-          <SectionCard
-            title="Programming"
-            videos={programmingVideos}
-            size={"small"}
+    <>
+      <div className={styles.container}>
+        <Head>
+          <title>Netflix</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Navbar username="pblgllgs@gmail.com" />
+        <div className={styles.main}>
+          <BannerHome
+            videoId="Oc-AsN7d1wg"
+            title={"Mr robot"}
+            subTitle={"Have society?"}
+            imgUrl="/static/mrrobot.jpg"
           />
-          <SectionCard title="Popular" videos={popularVideos} size={"medium"} />
+          <div className={styles.sectionWrapper}>
+            <SectionCard title="Action" videos={actionVideos} size={"large"} />
+            <SectionCard title="Space" videos={spaceVideos} size={"medium"} />
+            <SectionCard
+              title="Programming"
+              videos={programmingVideos}
+              size={"small"}
+            />
+            <SectionCard
+              title="Popular"
+              videos={popularVideos}
+              size={"medium"}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

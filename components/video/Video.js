@@ -1,12 +1,27 @@
 import cls from "classnames";
+import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
-import styles from "../../styles/Video.module.css";
+import styles from "./Video.module.css";
 
 const Video = ({ item }) => {
   const router = useRouter();
-  const { title, publishTime, description, channelTitle, tags } = item;
+  const { title, publishTime, description, channelTitle } = item;
   return (
     <div className={styles.container}>
+      <div className={styles.btnVolver}>
+        <Link href={"/home"}>
+          <div className={styles.wrapperVolver}>
+            <Image
+              src="/static/arrow_back.svg"
+              alt="play"
+              width={"32px"}
+              height={"32px"}
+            />
+            <div className={styles.btnVolverContent}> Volver atrás</div>
+          </div>
+        </Link>
+      </div>
       <div className={styles.video}>
         <iframe
           className={styles.videoPlayer}
@@ -31,7 +46,7 @@ const Video = ({ item }) => {
               <span className={styles.textColor}>Cast: </span>
               <span className={styles.channelTitle}>{channelTitle}</span>
             </p>
-            <p className={cls(styles.subText, styles.subTextWrapper)}>
+            {/* <p className={cls(styles.subText, styles.subTextWrapper)}>
               <span className={styles.textColor}>Tags: </span>
               <div>
                 <ul>
@@ -41,7 +56,7 @@ const Video = ({ item }) => {
                     })}
                 </ul>
               </div>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

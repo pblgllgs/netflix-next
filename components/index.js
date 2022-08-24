@@ -4,3 +4,4 @@ export { default as Card } from "./card";
 export { default as Navbar } from "./nav";
 export { default as SectionCard } from "./sectionCard";
 export { default as Video } from "./video";
+export { default as Footer } from "./footer";
