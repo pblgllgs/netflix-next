@@ -6,6 +6,7 @@ import styles from "../../styles/Video.module.css";
 import { getVideos, getYoutubeVideoById } from "../../lib/videos";
 import { useEffect, useState } from "react";
 import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/nav/Navbar";
 
 const Video = ({ item }) => {
   const router = useRouter();
@@ -19,6 +20,7 @@ const Video = ({ item }) => {
 
   return (
     <div className={styles.container}>
+      <Navbar />
       <div className={styles.btnVolver}>
         <Link href={"/home"}>
           <div className={styles.wrapperVolver}>
@@ -28,7 +30,7 @@ const Video = ({ item }) => {
               width={"32px"}
               height={"32px"}
             />
-            <div className={styles.btnVolverContent}> Volver atrás</div>
+            <div className={styles.btnVolverContent}>&nbsp;Volver atrás</div>
           </div>
         </Link>
       </div>
@@ -134,5 +136,6 @@ export const getStaticProps = async ({ params }) => {
     props: {
       item,
     },
+    revalidate: 60 * 60,
   };
 };
