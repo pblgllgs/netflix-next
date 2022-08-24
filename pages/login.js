@@ -79,21 +79,53 @@ const Login = () => {
       <main className={styles.main}>
         <div className={styles.mainWrapper}>
           <h1 className={styles.signinHeader}>Inicia sesión</h1>
-          <input
-            className={styles.emailInput}
-            type="text"
-            placeholder="Ingresa tu email"
-            value={email}
-            onChange={handleOnChangeEmail}
-          />
+          <div className={styles.inputs}>
+            <input
+              className={styles.emailInput1}
+              type="text"
+              placeholder="Ingresa tu email"
+              value={email}
+              onChange={handleOnChangeEmail}
+            />
+            <input
+              className={styles.emailInput2}
+              type="text"
+              placeholder="Ingresa tu contraseña"
+              value={"Contraseña"}
+              onChange={handleOnChangeEmail}
+            />
+          </div>
+
           <p className={styles.userMsg}>{userMsg}</p>
-          <button
-            disabled={isLoading}
-            className={styles.loginBtn}
-            onClick={handleLoginWithEmail}
-          >
-            {isLoading ? "Loading" : "Sign in"}
-          </button>
+          <div className={styles.btnLoginWrapper}>
+            <button
+              disabled={isLoading}
+              className={styles.loginBtn}
+              onClick={handleLoginWithEmail}
+            >
+              {isLoading ? "Loading" : "Iniciar sesión"}
+            </button>
+          </div>
+          <div className={styles.checkLink}>
+            <div className={styles.checkBox}>
+              <input type="checkbox" />
+              Recuérdame
+            </div>
+            <div className={styles.link}>¿Necesitas ayuda?</div>
+          </div>
+          <div className={styles.penultimo}>
+            <div className={styles.primeraVez}>¿Primera vez en Netflix?</div>
+            <div className={styles.subLink}>&nbsp;Suscríbete ahora</div>
+          </div>
+          <div className={styles.ultima}>
+            <div className={styles.captcha}>
+              Esta página está protegida por Google reCAPTCHA
+            </div>
+          </div>
+          <div className={styles.masInfo}>
+            para comprobar que no eres un robot.
+            <Link href={"/login"}> Más info.</Link>
+          </div>
         </div>
       </main>
     </div>
