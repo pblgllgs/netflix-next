@@ -46,7 +46,7 @@ const Card = (props) => {
 
   const [video, setVideo] = useState("");
 
-  const { title, publishTime, description, channelTitle } = video;
+  const { title, publishTime, description, channelTitle, tags } = video;
 
   const scale = id === 0 ? { scale: 1.1 } : { scale: 1.1 };
 
@@ -85,7 +85,6 @@ const Card = (props) => {
               styles.modal,
             )}
             overlayClassName={styles.overlay}
-            shouldCloseOnOverlayClick={true}
             preventScroll={true}
             shouldFocusAfterRender={
               true
@@ -116,6 +115,17 @@ const Card = (props) => {
                       <span className={styles.channelTitle}>
                         {channelTitle}
                       </span>
+                    </p>
+                    <p className={cls(styles.subText, styles.subTextWrapper)}>
+                      <span className={styles.textColor}>Tags: </span>
+                      <div>
+                        <ul>
+                          {tags &&
+                            tags.slice(0, 10).map((tag, idx) => {
+                              return <li key={idx}>{tag}</li>;
+                            })}
+                        </ul>
+                      </div>
                     </p>
                   </div>
                 </div>

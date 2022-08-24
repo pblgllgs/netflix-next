@@ -91,7 +91,7 @@ const Login = () => {
               className={styles.emailInput2}
               type="text"
               placeholder="Ingresa tu contraseña"
-              value={"Contraseña"}
+              value={"***********"}
               onChange={handleOnChangeEmail}
             />
           </div>

@@ -67,12 +67,13 @@
   border: 1px solid var(--shadow10);
 }
 
-/* .overlay {
+.overlay {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-} */
+}
 
 /** gives box shadow to the video frame **/
 .borderBoxShadow {

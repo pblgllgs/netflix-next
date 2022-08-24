@@ -4,7 +4,7 @@ import styles from "../../styles/Video.module.css";
 
 const Video = ({ item }) => {
   const router = useRouter();
-  const { title, publishTime, description, channelTitle } = item;
+  const { title, publishTime, description, channelTitle, tags } = item;
   return (
     <div className={styles.container}>
       <div className={styles.video}>
@@ -30,6 +30,17 @@ const Video = ({ item }) => {
             <p className={cls(styles.subText, styles.subTextWrapper)}>
               <span className={styles.textColor}>Cast: </span>
               <span className={styles.channelTitle}>{channelTitle}</span>
+            </p>
+            <p className={cls(styles.subText, styles.subTextWrapper)}>
+              <span className={styles.textColor}>Tags: </span>
+              <div>
+                <ul>
+                  {tags &&
+                    tags.slice(0, 10).map((tag, idx) => {
+                      return <li key={idx}>{tag}</li>;
+                    })}
+                </ul>
+              </div>
             </p>
           </div>
         </div>
