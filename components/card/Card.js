@@ -178,7 +178,6 @@ const Card = (props) => {
           layout="fill"
           onError={handleOnError}
           className={styles.cardImg}
-          priority
         />
       </motion.div>
     </div>

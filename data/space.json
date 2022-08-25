@@ -24,7 +24,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/piMfL12RzoA/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/piMfL12RzoA/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -58,7 +58,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/mqu410VnFsE/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/mqu410VnFsE/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -92,7 +92,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/wrdFJBqgHe0/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/wrdFJBqgHe0/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -126,7 +126,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/xrYruHskwXk/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/xrYruHskwXk/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -160,7 +160,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/iE2h2dG92Wk/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/iE2h2dG92Wk/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -194,7 +194,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/BglvYAfGbkI/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/BglvYAfGbkI/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -228,7 +228,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/selHW01Ea5g/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/selHW01Ea5g/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -262,7 +262,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/r1_03zEeKyA/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/r1_03zEeKyA/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -296,7 +296,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/Y_plhk1FUQA/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/Y_plhk1FUQA/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -330,7 +330,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/Ve1jmTGrr7o/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/Ve1jmTGrr7o/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -338,74 +338,6 @@
                 "channelTitle": "Canal Space",
                 "liveBroadcastContent": "none",
                 "publishTime": "2022-08-11T02:11:32Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "smuDG_Pf_QLWS3T3-iU8crOl_ws",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "wEe3_jdLons"
-            },
-            "snippet": {
-                "publishedAt": "2022-08-18T21:30:09Z",
-                "channelId": "UCCLGLuBYz-u9yAxhzsoJvSg",
-                "title": "Top 8 WEIRDEST Space Discoveries DOCUMENTARY, Universe, Nebulas and Galaxies",
-                "description": "A nebula is a cloud of dust and gas, usually tens to hundreds of light years across. A galaxy is much larger — usually thousands to ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/wEe3_jdLons/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/wEe3_jdLons/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/wEe3_jdLons/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "DTTV - Quantum Universe",
-                "liveBroadcastContent": "none",
-                "publishTime": "2022-08-18T21:30:09Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "SnZcBet6IvXxdeC-M0Kq6aTABiI",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "PuzAerYa6As"
-            },
-            "snippet": {
-                "publishedAt": "2022-08-19T15:27:16Z",
-                "channelId": "UCVTomc35agH1SM6kCKzwW_g",
-                "title": "SpaceX Cargo Dragon drifts away from space station in these awesome views",
-                "description": "The SpaceX CRS-25 Crew Dragon spacecraft undocked from the International Space Station on Aug. 19, 2022. It is scheduled to ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/PuzAerYa6As/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/PuzAerYa6As/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/PuzAerYa6As/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "VideoFromSpace",
-                "liveBroadcastContent": "none",
-                "publishTime": "2022-08-19T15:27:16Z"
             }
         },
         {
@@ -432,7 +364,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/-UbDpKj3gos/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/-UbDpKj3gos/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -466,7 +398,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/t6O4pjFCeZY/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/t6O4pjFCeZY/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -500,7 +432,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/KPEmBzlSU2I/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/KPEmBzlSU2I/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -534,7 +466,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/iw6JMawzPnY/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/iw6JMawzPnY/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -568,7 +500,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/yPVQtvbiS4Y/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/yPVQtvbiS4Y/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -602,7 +534,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/vY0tpTata8w/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/vY0tpTata8w/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -636,7 +568,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/QcIV9rfY9D0/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/QcIV9rfY9D0/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -670,7 +602,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/Uugehal0oYs/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/Uugehal0oYs/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -704,7 +636,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/rTdJpeF2OHs/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/rTdJpeF2OHs/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -738,7 +670,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/FVjzPhhJuEY/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/FVjzPhhJuEY/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -772,7 +704,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/srR9S3Q-QY4/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/srR9S3Q-QY4/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
@@ -806,7 +738,7 @@
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/EJwEYJb7eks/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/EJwEYJb7eks/maxresdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
